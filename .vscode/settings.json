@@ -1,0 +1,8 @@
+{
+  "[jade]": {
+      "editor.formatOnSave": true
+  },
+  "[pug]": {
+      "editor.formatOnSave": true
+  }
+}

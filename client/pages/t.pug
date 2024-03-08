@@ -1,26 +1,27 @@
 extends ../layouts/default.pug
 
 block goFunctions
-    :go:func Index(values map[string]string)
+  :go:func Index(values map[string]string)
 
 mixin for(golang)
-    pre Precompile jade templates to #{golang} code.
+  pre Precompile jade templates to #{golang} code.
 
 block title
   title= values["title"]
 
 block content
-    h1 Jade - template engine
-        +for('Go')
+  h1 Jade - template engine
+    +for('Go') 
 
-    .container.text-accent
-        - val, _ := strconv.ParseBool(values["jade"])
-        if val
-            p You are amazing... 
-        else
-            p Get on it !!
-        p.
-            Jade/Pug is a terse and simple templating language with a #[strong focus] on performance and powerful features.
-        .class-test.
-            ok y
-        span.i-ph-anchor-simple-thin
+  .container.text-accent
+    - val, _ := strconv.ParseBool(values["jade"])
+    if val
+      p You are amazing... 
+    else
+      p Get on it !!
+    p.
+      Jade/Pug is a terse and simple templating language with a #[strong focus] on performance and powerful features.
+    .class-test.
+      ok y
+    .i-ph-house
+    p bonsoir jsais pas

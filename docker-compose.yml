@@ -1,0 +1,28 @@
+version: "3.9"
+
+services:
+  unocss:
+    build:
+      context: ./client
+      dockerfile: ../.docker/client/Dockerfile
+    container_name: gopug_unocss
+    volumes:
+      - ./client:/app/client
+      - ./server:/app/server
+    env_file:
+      - .env
+    restart: always
+
+  server:
+    build:
+      context: ./server
+      dockerfile: ../.docker/server/Dockerfile
+    container_name: gopug_server
+    volumes:
+      - ./client:/app/client
+      - ./server:/app/server
+    env_file:
+      - .env
+    ports:
+      - 28080:8080
+    restart: always

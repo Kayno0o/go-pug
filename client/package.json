@@ -12,5 +12,8 @@
     "@unocss/postcss": "^0.58.5",
     "@unocss/preset-wind": "^0.58.5",
     "unocss": "^0.58.5"
+  },
+  "dependencies": {
+    "typescript": "^5.4.2"
   }
 }

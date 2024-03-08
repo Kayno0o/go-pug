@@ -4,7 +4,12 @@ import (
 	"log"
 	"net/http"
 
-	"kayn.ooo/go-pug/app/jade"
+	_ "net"
+
+	_ "github.com/Joker/hpp"
+	_ "github.com/valyala/bytebufferpool"
+
+	"kaynooo.xyz/go-pug/src/jade"
 )
 
 func main() {
