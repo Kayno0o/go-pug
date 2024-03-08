@@ -16,7 +16,7 @@ block content
   .container.text-accent
     - val, _ := strconv.ParseBool(values["jade"])
     if val
-      p You are amazing... 
+      p You are amazing... #{values["name"]}
     else
       p Get on it !!
     p.

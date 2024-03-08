@@ -4,5 +4,11 @@
   },
   "[pug]": {
       "editor.formatOnSave": true
-  }
+  },
+  "emmet.excludeLanguages": [
+    "markdown",
+    "php",
+    "pug",
+    "jade"
+  ]
 }

@@ -22,6 +22,7 @@ func main() {
 		jade.Index(map[string]string{
 			"title": "Test title",
 			"jade":  "true",
+			"name":  req.URL.Query().Get("q"),
 		}, wr)
 	})
 

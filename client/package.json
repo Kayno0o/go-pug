@@ -11,9 +11,15 @@
     "@unocss/core": "^0.58.5",
     "@unocss/postcss": "^0.58.5",
     "@unocss/preset-wind": "^0.58.5",
+    "cssnano": "^6.1.0",
+    "postcss": "^8.4.35",
+    "postcss-cli": "^11.0.0",
     "unocss": "^0.58.5"
   },
   "dependencies": {
     "typescript": "^5.4.2"
+  },
+  "scripts": {
+    "postcss": "postcss ../client/assets/**/*.css -o ../server/public/css/main.css"
   }
 }

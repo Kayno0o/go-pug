@@ -1,17 +1,23 @@
-import { defineConfig, presetIcons } from 'unocss'
+import { defineConfig, presetIcons, presetUno } from 'unocss'
 import presetWind from '@unocss/preset-wind'
 
 export default defineConfig({
-  cli: {
-    entry: {
-      patterns: [
-        "../client/assets/**/*.{css,js,ts}",
-        "../client/**/*.pug",
-        // "../server/src/jade/**/*.pug.go",
-      ],
-      outFile: "../server/public/css/main.css"
-    },
+  content: {
+    filesystem: [
+      "../client/assets/**/*.{js,ts}",
+      "../client/**/*.pug",
+    ]
   },
+  // cli: {
+  //   entry: {
+  //     patterns: [
+  //       "../client/assets/**/*.{js,ts}",
+  //       "../client/**/*.pug",
+  //       // "../server/src/jade/**/*.pug.go",
+  //     ],
+  //     outFile: "../server/public/css/main.css"
+  //   },
+  // },
   presets: [
     presetWind(),
     presetIcons(),

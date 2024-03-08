@@ -8,4 +8,4 @@ RUN npm install -g pnpm
 RUN pnpm install
 RUN apk add --no-cache make
 
-CMD ["make", "unocss"]
+CMD ["make", "docker"]

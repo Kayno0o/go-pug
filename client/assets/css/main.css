@@ -1,4 +1,4 @@
-@unocss;
+@unocss all;
 
 pre {
   @apply bg-stone-50 rounded-xl text-stone-900 px-4 py-1 border-2 border-stone-700;

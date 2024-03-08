@@ -14,8 +14,9 @@ const (
 	t__3 = `<p>      Jade/Pug is a terse and simple templating language with a <strong>focus</strong> on performance and powerful features.</p><div class="class-test">      ok y</div><div class="i-ph-house"></div><p>bonsoir jsais pas</p></div></body></html>`
 	t__4 = `<pre>Precompile jade templates to `
 	t__5 = ` code.</pre>`
-	t__6 = `<p>You are amazing... </p>`
-	t__7 = `<p>Get on it !!</p>`
+	t__6 = `<p>You are amazing... `
+	t__7 = `</p>`
+	t__8 = `<p>Get on it !!</p>`
 )
 
 func Index(values map[string]string, wr io.Writer) {
@@ -40,9 +41,10 @@ func Index(values map[string]string, wr io.Writer) {
 	val, _ := strconv.ParseBool(values["jade"])
 	if val {
 		buffer.WriteString(t__6)
-
-	} else {
+		WriteEscString(values["name"], buffer)
 		buffer.WriteString(t__7)
+	} else {
+		buffer.WriteString(t__8)
 
 	}
 	buffer.WriteString(t__3)
