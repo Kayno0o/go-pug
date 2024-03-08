@@ -13,7 +13,7 @@ const (
 	t__2 = `</h1><div class="container text-accent">`
 	t__3 = `<p>      Jade/Pug is a terse and simple templating language with a <strong>focus</strong> on performance and powerful features.</p><div class="class-test">      ok y</div><div class="i-ph-house"></div><p>bonsoir jsais pas</p></div></body></html>`
 	t__4 = `<pre>Precompile jade templates to `
-	t__5 = ` code.</pre>`
+	t__5 = ` code.<div>test</div></pre>`
 	t__6 = `<p>You are amazing... `
 	t__7 = `</p>`
 	t__8 = `<p>Get on it !!</p>`
@@ -34,6 +34,7 @@ func Index(values map[string]string, wr io.Writer) {
 		buffer.WriteString(t__4)
 		WriteEscString(golang, buffer)
 		buffer.WriteString(t__5)
+
 	}
 
 	buffer.WriteString(t__2)

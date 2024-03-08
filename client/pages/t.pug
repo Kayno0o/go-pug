@@ -5,13 +5,14 @@ block goFunctions
 
 mixin for(golang)
   pre Precompile jade templates to #{golang} code.
+    div test
 
 block title
   title= values["title"]
 
 block content
   h1 Jade - template engine
-    +for('Go') 
+    +for('Go')
 
   .container.text-accent
     - val, _ := strconv.ParseBool(values["jade"])
