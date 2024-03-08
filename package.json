@@ -1,0 +1,16 @@
+{
+  "name": "go-pug",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.go",
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@iconify-json/ph": "^1.1.11",
+    "@unocss/cli": "^0.58.5",
+    "@unocss/core": "^0.58.5",
+    "@unocss/postcss": "^0.58.5",
+    "@unocss/preset-wind": "^0.58.5",
+    "unocss": "^0.58.5"
+  }
+}
