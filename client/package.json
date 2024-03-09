@@ -21,6 +21,6 @@
     "typescript": "^5.4.2"
   },
   "scripts": {
-    "postcss": "postcss ../client/assets/**/*.css -o ../server/public/css/main.css"
+    "postcss": "postcss ./assets/**/*.css --dir ../server/public/css/"
   }
 }
