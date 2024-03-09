@@ -4,9 +4,9 @@ import presetWind from '@unocss/preset-wind'
 export default defineConfig({
   content: {
     filesystem: [
-      "./assets/**/*.{js,ts}",
-      "./**/*.pug",
-    ]
+      './assets/**/*.{js,ts}',
+      './**/*.pug',
+    ],
   },
   presets: [
     presetMini(),
@@ -20,6 +20,6 @@ export default defineConfig({
       extract(args) {
         return args.code.split(/[\\:]?[\s'"`;{}.]+/g)
       },
-    }
-  ]
+    },
+  ],
 })

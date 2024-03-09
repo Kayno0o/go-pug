@@ -1,27 +1,31 @@
 {
   "name": "go-pug",
+  "type": "module",
   "version": "1.0.0",
   "description": "",
-  "main": "main.go",
   "author": "",
   "license": "ISC",
+  "main": "main.go",
+  "scripts": {
+    "postcss": "postcss ./assets/**/*.css --dir ../server/public/css/",
+    "tsc": "tsc",
+    "lint:fix": "eslint . --fix"
+  },
   "devDependencies": {
+    "@antfu/eslint-config": "^2.8.0",
     "@iconify-json/ph": "^1.1.11",
     "@unocss/cli": "^0.58.5",
     "@unocss/core": "^0.58.5",
+    "@unocss/eslint-plugin": "^0.58.5",
     "@unocss/postcss": "^0.58.5",
     "@unocss/preset-wind": "^0.58.5",
     "autoprefixer": "^10.4.18",
     "cssnano": "^6.1.0",
+    "eslint": "^8.57.0",
+    "typescript": "^5.4.0",
     "postcss": "^8.4.35",
     "postcss-cli": "^11.0.0",
     "postcss-nested": "^6.0.1",
     "unocss": "^0.58.5"
-  },
-  "dependencies": {
-    "typescript": "^5.4.2"
-  },
-  "scripts": {
-    "postcss": "postcss ./assets/**/*.css --dir ../server/public/css/"
   }
 }
