@@ -4,6 +4,7 @@ module.exports = {
     'cssnano': {
       preset: 'default',
     },
-    'autoprefixer': {}
+    'autoprefixer': {},
+    'postcss-nested': {},
   },
 }
