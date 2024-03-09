@@ -9,7 +9,7 @@ import (
 
 const (
 	t__0 = `<!DOCTYPE html><html><head><link rel="stylesheet" href="./public/css/main.css"/><script src="./public/js/index.js"></script><title>`
-	t__1 = `</title></head><body><h1>Jade - template engine`
+	t__1 = `</title></head><body><header class="w-full"><nav><ul class="flex gap-4"><li>test 1</li><li>test 2</li><li>test 3</li><li>test 4</li></ul></nav></header><h1>Jade - template engine`
 	t__2 = `</h1><div class="container text-accent">`
 	t__3 = `<p>      Jade/Pug is a terse and simple templating language with a <strong>focus</strong> on performance and powerful features.</p><div class="class-test"><ok>y</ok></div><div class="i-ph-house"></div><p>bonsoir jsais pas</p></div></body></html>`
 	t__4 = `<pre>Precompile jade templates to `

@@ -4,8 +4,20 @@ services:
   unocss:
     build:
       context: ./client
-      dockerfile: ../.docker/client/Dockerfile
+      dockerfile: ../.docker/unocss/Dockerfile
     container_name: gopug_unocss
+    volumes:
+      - ./client:/app/client
+      - ./server:/app/server
+    env_file:
+      - .env
+    restart: always
+
+  typescript:
+    build:
+      context: ./client
+      dockerfile: ../.docker/typescript/Dockerfile
+    container_name: gopug_typescript
     volumes:
       - ./client:/app/client
       - ./server:/app/server
@@ -24,5 +36,5 @@ services:
     env_file:
       - .env
     ports:
-      - 28080:8080
+      - '28080:8080'
     restart: always
